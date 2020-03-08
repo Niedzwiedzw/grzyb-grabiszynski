@@ -52,7 +52,7 @@ export default defineComponent({
         //     'background-size': 'cover',
         //     'background-blend-mode': 'screen',
         // }));
-        const style = computed(() => transparentBackground(mushroom.value?.coverImage ?? '', .2));
+        const style = computed(() => transparentBackground(mushroom.value?.coverImage ?? '', .1));
 
         return {loading, mushroom, style};
     },
