@@ -23,17 +23,8 @@ import {find, isNil} from 'lodash';
 import {computed, defineComponent, onMounted, ref} from '@vue/composition-api';
 import {Mushroom} from "@/models";
 import {shrooms} from "@/data/legacy";
+import {transparentBackground} from "@/helpers";
 
-export function transparentBackground(url: string, opacity: number) {
-    opacity = 1-opacity;
-    const intensity = opacity * 255;
-    const intensityStr = `${intensity},${intensity},${intensity}`;
-    return {
-        'background-image': `linear-gradient(rgba(${intensityStr},${opacity}), rgba(${intensityStr},${opacity})), url(${url}`,
-        'background-size': 'cover',
-        'background-blend-mode': 'screen',
-    }
-}
 
 export default defineComponent({
     name: "ShroomDetail",

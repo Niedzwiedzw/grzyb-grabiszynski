@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
-    <transition name="bounce" mode="out-in">
+    <transition name="bounce" mode="out-in" class="main-content">
       <router-view class="main-content"/>
     </transition>
     <div class="polyfill">
@@ -35,12 +35,19 @@
   }
 
   .main-content {
-    @include grid-center;
-    height: calc(100vh - #{$navbar-height} - #{2*$padding} - #{$padding});
+    display: grid;
+    height: 100%;
+    padding: $padding;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: $padding;
-    width: calc(100% - #{2*$padding});
+    align-items: center;
+    justify-items: center;
+    &:after {
+      content: "created by wojciech.brozek@niedzwiedz.it";
+      color: $white;
+      height: $padding;
+      opacity: .4;
+    }
     & > * {
       max-width: 80rem;
     }

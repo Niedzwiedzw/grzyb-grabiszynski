@@ -20,6 +20,7 @@ export default defineComponent({
 
         const style = computed(() => ({
             'background-image': `url(${props.shroom.coverImage})`,
+            'background-size': 'cover',
         }));
 
         return {

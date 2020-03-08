@@ -1,8 +1,15 @@
 <template>
-  <div class="Home">
+  <div class="Home" :style="style">
     <h3>Grzyby wielkoowocnikowe
       Parku Grabiszyńskiego
       Lista obecności w obrazkach</h3>
+
+    <h4>Grzyb dnia: <strong>{{randomShroom.name}}</strong></h4>
+    <shroom
+        :shroom="randomShroom"
+        class="hoverable"
+        @click.native="$router.push({name: 'shroom-detail', params: {shroomName: randomShroom.name.replace(' ', '-')}})"
+    ></shroom>
     <p><span style="color: #0d0a04;">Na przełomie 2017 i 2018 r. podczas konsultacji z mieszkańcami tzw. masterplanemu, gdy urzędnicy przedstawiali pomysł jak w kosztowny i kosztotwórczy sposób przekształcić Park Grabiszyński we Wrocławiu w pretensjonalny i miejscami kiczowaty skwerek - rozmawialiśmy o złym traktowaniu roślin (agresywna wycinka, nadmierne koszenie, ograniczanie różnorodności, maszynowe i niepotrzebne sprzątanie), zwierząt&nbsp; (niszczenie siedlisk, brak warunków zimowania) i samej przestrzeni Parku. W pierwszych dwóch kwestiach&nbsp; nastąpił od tamtego czasu pewien postęp, w ostatniej - nie do końca.&nbsp;</span>
     </p>
     <p><span style="color: #0d0a04;">Nie został wówczas podjęty temat ochrony czy chociaż dostrzeżenia kolejnych mieszkańców Parku – grzybów, a jest ich tutaj sporo.&nbsp;</span><span
@@ -19,14 +26,27 @@
     <p><span style="color: #0d0a04;"><em>Zastrzeżenie:</em> opisy i zdjęcia nie stanowią zachęty do zbierania przedstawianych grzybów czy też do ich spożywania. Nie jest to opis o aspiracjach atlasu grzybów, to bardziej niepełna lista ich obecności w PG. Fotografie zostały zrobione wg stanu na chwilę ich wykonania, niekoniecznie pokazują cechy charakterystyczne w sposób podręcznikowy. Określenia nazw grzybów są wykonane w dobrej wierze, ale mogą zawierać błędy. Część z opisanych tutaj grzybów jest trująca. Nie mając odpowiedniej wiedzy i praktyki – nie należy ich zbierać (to dotyczy grzybów w ogóle), część podlega ochronie. Grzyby akumulują metale ciężkie i pomysł zbierania ich w mieście jest bardzo nierozsądny. Zdecydowana większość owocników pokazanych na zdjęciach jest widoczna z ogólnodostępnych ścieżek i trawników, wystarczy popatrzeć.&nbsp; </span>
     </p>
     <p><span style="color: #0d0a04;">Jerzy Trzaska</span></p>
+
   </div>
 </template>
 
 <script lang="ts">
-import {defineComponent} from '@vue/composition-api';
+import {computed, defineComponent} from '@vue/composition-api';
+import {Mushroom} from "@/models";
+import {ShroomRaw, shrooms} from "@/data/legacy";
+import Shroom from "@/views/shrooms/Shroom.vue";
+import {pickRandomDeterministic, transparentBackground} from "@/helpers";
 
 export default defineComponent({
     name: "Home",
+    components: {
+        Shroom,
+    },
+    setup() {
+        const randomShroom = new Mushroom(pickRandomDeterministic(shrooms) as ShroomRaw);
+        const style = computed(() => transparentBackground(randomShroom.randomImage, .03));
+        return {randomShroom, style};
+    },
 })
 </script>
 
