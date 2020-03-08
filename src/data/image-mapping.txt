@@ -1,0 +1,178 @@
+./public/2_Grzyby_mail_Wojtek
+├── Bialoporek_brzozowy
+│  ├── PB160291z.jpg
+│  ├── PB160296z.jpg
+│  └── PB160307z.jpg
+├── Borowik_ponury
+│  ├── P6060619.jpg
+│  ├── P6060627z.jpg
+│  ├── P6060628z.jpg
+│  └── P6060630zz.jpg
+├── Chrzastkoskornik_purpurowy
+│  ├── IMG_9543z.JPG
+│  ├── IMG_9546z2.JPG
+│  ├── IMG_9554z.JPG
+│  └── IMG_9562z.JPG
+├── Czasznica_olbrzymia
+│  ├── P1119279z.jpg
+│  ├── P1119312z.jpg
+│  ├── P8291483z.jpg
+│  ├── P8291487z.jpg
+│  ├── P8311473z.jpg
+│  └── P8311480z.jpg
+├── Czernidlak_blyszczacy
+│  ├── P5180330z.jpg
+│  ├── P5180332z.jpg
+│  ├── PB100171z.jpg
+│  └── PC319221z.jpg
+├── Czernidlak_gromadny
+│  ├── P6030533z1.jpg
+│  ├── P6030541z2.jpg
+│  ├── P6030543z.jpg
+│  ├── P9272145z.jpg
+│  └── P9272156z1.jpg
+├── Czernidlak_kolpakowaty
+│  ├── PA142278z.jpg
+│  ├── PA142315z.jpg
+│  └── PA142316z.jpg
+├── Czernidlak_pospolity
+│  ├── P9282178z.jpg
+│  ├── P9292233z.jpg
+│  └── PA012250zz.jpg
+├── Czubajka_czerwieniejaca
+│  ├── P9242067z2.jpg
+│  ├── P9242072z2.jpg
+│  ├── P9242081z.jpg
+│  ├── PA142300z.jpg
+│  └── PB070102z.jpg
+├── Gasowka_fioletowawa
+│  ├── P9272117z.jpg
+│  ├── P9272122z.jpg
+│  └── PB100141z.jpg
+├── Gestoporek_cynobrowy
+│  ├── P9292218z.jpg
+│  ├── P9292220z.jpg
+│  ├── P9292229zz.jpg
+│  ├── PB100162z.jpg
+│  └── PB100168z.jpg
+├── Gmatwica_chropowata
+│  ├── IMG_9500z.JPG
+│  ├── IMG_9500z2.JPG
+│  ├── P2202011z.jpg
+│  └── PB160341z.jpg
+├── Gwiazdosz_prazkowany
+│  ├── P8291531z.jpg
+│  ├── P8291535z.jpg
+│  ├── P8311463z.jpg
+│  └── P8311470z.jpg
+├── Hubiak_pospolity
+│  ├── P2202026z.jpg
+│  ├── P2212087z.jpg
+│  ├── PB160319z.jpg
+│  └── PB160324z.jpg
+├── Kozlarz_grabowy
+│  ├── P6180672z.jpg
+│  ├── P6180675z.jpg
+│  ├── P6180676z.jpg
+│  └── P6180681z.jpg
+├── Lakownica_splaszczona
+│  ├── P2262224z.jpg
+│  ├── P2262227zz.jpg
+│  ├── PB140221z.jpg
+│  └── PB140229z.jpg
+├── Lejkownik_kubkowatokapeluszowy
+│  ├── PC319233z1.jpg
+│  ├── PC319234z1.jpg
+│  └── PC319238z1.jpg
+├── Luskwiak_brunatnoluseczkowy
+│  ├── P9232027z.jpg
+│  ├── P9232029z.jpg
+│  └── P9232031z.jpg
+├── Luskwiak_nastroszony
+│  ├── PA142307z.jpg
+│  ├── PA142307zz.jpg
+│  └── PA142311z.jpg
+├── Maslanka_wiazkowa
+│  ├── P6050591z.jpg
+│  └── P6050594z.jpg
+├── Murszak_rdzawy
+│  ├── P6100638z.jpg
+│  ├── P6100642z2.jpg
+│  ├── P6100653zz.jpg
+│  ├── P6180682z.jpg
+│  └── P6180683z.jpg
+├── Opienka_ciemna
+│  ├── PB029428z.jpg
+│  ├── PB029431z.jpg
+│  └── PB029432z.jpg
+├── Pieczarka
+│  ├── P6030547z.jpg
+│  ├── P6030548z.jpg
+│  ├── P8311461z.jpg
+│  └── P9232021z.jpg
+├── Podgrzybek_brunatny
+│  ├── P9232039z.jpg
+│  └── P9232044z.jpg
+├── Podgrzybek_zlotawy
+│  ├── P6040576z.jpg
+│  ├── P6040580z.jpg
+│  ├── P8291512z.jpg
+│  └── P8291523z2.jpg
+├── Prochliniec_dlugotrzonkowy
+│  ├── IMG_8074z.JPG
+│  ├── IMG_8077z.JPG
+│  ├── IMG_8082z.JPG
+│  └── IMG_8084z.JPG
+├── Purchawka_chropowata
+│  ├── P9232033z.jpg
+│  ├── P9232034z2.jpg
+│  └── PC319226z.jpg
+├── Rozszczepka_pospolita
+│  ├── P2222118z.jpg
+│  ├── P2222121z.jpg
+│  ├── P2222127z.jpg
+│  ├── P2222135z.jpg
+│  └── PB070079z.jpg
+├── Szmaciak_galezisty
+│  ├── PB029423z.jpg
+│  ├── PB029424z.jpg
+│  └── PB029427z.jpg
+├── Trzesak_pomaranczowozolty
+│  ├── P2051696z.jpg
+│  ├── P2051735z.jpg
+│  └── P2051738z.jpg
+├── Uszak_bzowy
+│  ├── P5130254z.jpg
+│  ├── P5130261z.jpg
+│  └── P5130264z.jpg
+├── Uszak_skornikowaty
+│  ├── P2242178z.jpg
+│  ├── P2242192z.jpg
+│  ├── P2242194z.jpg
+│  └── P2242200z.jpg
+├── Wachlarzowiec_olbrzymi
+│  ├── P9282201z.jpg
+│  ├── PA012261z.jpg
+│  ├── PA202333z.jpg
+│  ├── PA202334z.jpg
+│  ├── PA242366z.jpg
+│  └── PA242380z.jpg
+├── Wrosniak_roznobarwny
+│  ├── P2202024z.jpg
+│  ├── P2202025z.jpg
+│  ├── P2212061z.jpg
+│  ├── P2212063z.jpg
+│  └── P2212073z.jpg
+├── Zagiew_luskowata
+│  ├── P5130240z.jpg
+│  ├── P5130244z.jpg
+│  └── P5130251z.jpg
+├── Zimowka_aksamitnotrzonowa
+│  ├── IMG_7644z.JPG
+│  ├── IMG_7650z.JPG
+│  ├── PC319217z.jpg
+│  └── PC319240z.jpg
+└── Zolciak_siarkowy
+   ├── P5270436z.jpg
+   ├── P5270438z.jpg
+   └── P6040570z.jpg

@@ -35,7 +35,6 @@ export default defineComponent({
                 (m) => every(searchQuery.value, (w) => m.name.toLowerCase().includes(w) || m.description.toLowerCase().includes(w)),
             )
         );
-
         return {
             searchQuery,
             mushrooms,
