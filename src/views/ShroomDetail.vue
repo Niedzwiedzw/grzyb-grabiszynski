@@ -1,6 +1,6 @@
 <template>
   <div class="ShroomDetail" v-if="!loading" :style="style">
-    <h3 class="hoverable">{{mushroom.name}}</h3>
+    <h3>{{mushroom.name}}</h3>
     <a
         v-for="link of mushroom.links"
         :key="link"
@@ -52,7 +52,7 @@ export default defineComponent({
         //     'background-size': 'cover',
         //     'background-blend-mode': 'screen',
         // }));
-        const style = computed(() => transparentBackground(mushroom.value?.coverImage ?? '', .3));
+        const style = computed(() => transparentBackground(mushroom.value?.coverImage ?? '', .2));
 
         return {loading, mushroom, style};
     },

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
-    <transition name="bounce" mode="out-in" class="main-content">
+    <transition name="bounce" mode="out-in">
       <router-view class="main-content"/>
     </transition>
     <div class="polyfill">

@@ -1,5 +1,5 @@
 <template>
-  <div class="Home" :style="style">
+  <div class="Home">
     <h3>Grzyby wielkoowocnikowe
       Parku Grabiszyńskiego
       Lista obecności w obrazkach</h3>
