@@ -1,4 +1,5 @@
-# grzyb-grabiszynski
+# grzybgrabiszynski.pl
+strona poświęcona Parkowi Grabiszyńskiemu
 
 ## Project setup
 ```

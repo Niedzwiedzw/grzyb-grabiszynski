@@ -1,32 +1,48 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav-bar></nav-bar>
+    <transition name="bounce" mode="out-in">
+      <router-view class="main-content"/>
+    </transition>
+    <div class="polyfill">
     </div>
-    <router-view/>
   </div>
 </template>
 
+<script lang="ts">
+  import {defineComponent} from "@vue/composition-api";
+  import NavBar from "@/views/generic/NavBar.vue";
+
+  export default defineComponent({
+      name: "Home",
+      components: {
+        NavBar,
+      },
+  })
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import "src/styles/main";
 
-#nav {
-  padding: 30px;
+  #app {
+    @include grid-center;
+    grid-template-rows: min-content 1fr;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    .polyfill {
+      grid-row: -1;
+      height: $padding;
     }
   }
-}
+
+  .main-content {
+    @include grid-center;
+    height: calc(100vh - #{$navbar-height} - #{2*$padding} - #{$padding});
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: $padding;
+    width: calc(100% - #{2*$padding});
+    & > * {
+      max-width: 80rem;
+    }
+  }
 </style>
