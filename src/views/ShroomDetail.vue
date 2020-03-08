@@ -1,6 +1,7 @@
 <template>
   <div class="ShroomDetail" v-if="!loading" :style="style">
     <h3>{{mushroom.name}}</h3>
+    <h4 class="warning" v-if="mushroom.hasWarning">{{mushroom.warning}}</h4>
     <a
         v-for="link of mushroom.links"
         :key="link"
@@ -52,7 +53,7 @@ export default defineComponent({
         //     'background-size': 'cover',
         //     'background-blend-mode': 'screen',
         // }));
-        const style = computed(() => transparentBackground(mushroom.value?.coverImage ?? '', .1));
+        const style = computed(() => transparentBackground(mushroom.value?.coverImage ?? '', .6));
 
         return {loading, mushroom, style};
     },
@@ -64,11 +65,16 @@ export default defineComponent({
 
 .ShroomDetail {
   padding-bottom: 3*$padding;
+  grid-gap: $padding;
+
+  .warning {
+    color: red;
+  }
 
   & > * {
     width: 100%;
     text-align: center;
-    background-color: rgba(black, .4);
+    background-color: rgba(black, .7);
     color: $white;
     padding: $padding;
   }

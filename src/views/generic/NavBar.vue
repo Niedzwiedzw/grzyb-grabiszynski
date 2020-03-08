@@ -22,8 +22,8 @@ export default defineComponent({
   grid-template-columns: 1fr min-content;
   height: $navbar-height;
   align-self: start;
-  background-color: $secondary;
-  color: $secondary-accent;
+  background-color: $secondary-accent;
+  color: $primary;
   font-weight: 900;
   font-size: $x-large;
 

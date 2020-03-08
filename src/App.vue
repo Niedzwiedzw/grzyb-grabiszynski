@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar></nav-bar>
+    <nav-bar class="navbar"></nav-bar>
     <transition name="bounce" mode="out-in">
       <router-view class="main-content"/>
     </transition>
@@ -26,20 +26,17 @@
 
   #app {
     @include grid-center;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: 1fr;
 
-    .polyfill {
-      grid-row: -1;
-      height: $padding;
+    .navbar {
+      position: sticky;
+      top: 0;
     }
   }
 
   .main-content {
     display: grid;
-    height: 100%;
     padding: $padding;
-    overflow-x: hidden;
-    overflow-y: scroll;
     align-items: center;
     justify-items: center;
     &:after {
@@ -47,9 +44,7 @@
       color: $white;
       height: $padding;
       opacity: .4;
-    }
-    & > * {
-      max-width: 80rem;
+      font-size: $x-small;
     }
   }
 </style>
