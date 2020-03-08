@@ -2,16 +2,19 @@
   animation: bounce-in .5s;
 }
 .bounce-leave-active {
-  animation: bounce-in .5s reverse;
+  animation: bounce-in .3s reverse;
 }
 @keyframes bounce-in {
   0% {
+    opacity: initial;
     transform: scale(0);
   }
   50% {
-    transform: scale(1.5);
+    opacity: .5;
+    transform: scale(1.1);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
