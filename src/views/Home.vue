@@ -26,7 +26,7 @@
     </p>
     <p><span><em>Zastrzeżenie:</em> opisy i zdjęcia nie stanowią zachęty do zbierania przedstawianych grzybów czy też do ich spożywania. Nie jest to opis o aspiracjach atlasu grzybów, to bardziej niepełna lista ich obecności w PG. Fotografie zostały zrobione wg stanu na chwilę ich wykonania, niekoniecznie pokazują cechy charakterystyczne w sposób podręcznikowy. Określenia nazw grzybów są wykonane w dobrej wierze, ale mogą zawierać błędy. Część z opisanych tutaj grzybów jest trująca. Nie mając odpowiedniej wiedzy i praktyki – nie należy ich zbierać (to dotyczy grzybów w ogóle), część podlega ochronie. Grzyby akumulują metale ciężkie i pomysł zbierania ich w mieście jest bardzo nierozsądny. Zdecydowana większość owocników pokazanych na zdjęciach jest widoczna z ogólnodostępnych ścieżek i trawników, wystarczy popatrzeć.&nbsp; </span>
     </p>
-    <p style="text-align: start"><span>Jerzy Trzaska</span></p>
+    <p style="text-align: start; width: 100%;"><span>Jerzy Trzaska</span></p>
 
   </div>
 </template>

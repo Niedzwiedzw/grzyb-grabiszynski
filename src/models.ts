@@ -8,6 +8,9 @@ export function pickRandom<T>(collection: T[]): T | undefined {
         : collection[random(collection.length - 1, false)];
 }
 
+function thumbnail(image: string): string {
+    return `${image}__thumbnail.jpg`
+}
 
 export class Mushroom {
     public constructor(private raw: ShroomRaw) {}
@@ -17,6 +20,10 @@ export class Mushroom {
     public get images() { return this.betterImages ?? this.raw.images; }
     public get betterImages(): string[] | null {
         return getImagePaths(this.name) ?? null;
+    }
+    public get thumbnail(): string | null {
+        const im = pickRandom(this.betterImages ?? []);
+        return isNil(im) ? null : thumbnail(im);
     }
     public get links() { return this.raw.links; }
     public get warning() { return this.raw.warning ?? null; }
